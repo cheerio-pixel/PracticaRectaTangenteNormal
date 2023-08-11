@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Proyecto Calculo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <!--Sidebar-->
+    <div class="alert hide">
+      <span class="fas fa-exclamation-circle"></span>
+      <span class="msg">warning: Prueba de alerta</span>
+      <span class="close-btn">
+        <span class="fas fa-times"></span>
+      </span>
+    </div>
+    <div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776;</span>
+      </div>
+      <div class="top-row">
+        <button class="navbar-toggler">Menu</button>
+        <span class="navbar-brand"></span>
+      </div>
+      <div class="nav-scrollable">
+        <div class="nav-item">
+
+          <a href="#" data-content-id="Home">
+            <i class="fa-solid fa-house icon"></i> Home
+          </a>
+        </div>
+        <div class="nav-item">
+
+          <a href="#" data-content-id="Calculadora">
+            <i class="fas fa-calculator icon"></i> Calculadora
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" data-content-id="Acercade">
+            <i class="fas fa-user icon"></i> Acerca de
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Contenido De cada seccion-->
+    <div class="content">
+      <!--Calculadora-->
+      <div id="Calculadora" class="page">
+        <div class="Cuadro CuadroBlanco">
+          <h1 class="display-4">Calculadora de Rectas</h1>
+          <main>
+            <label for="Operacion"><strong>Funcion</strong></label>
+            <input type="text" id="Operacion"placeholder=" -x**3+6*x**2 ">
+            <label for="punto"><strong>Punto</strong></label>
+            <input type="number" id="punto" placeholder="1">
+            <button type="Boton" class="Boton" onclick="click_multiple_images()">Calcular</button>
+            <h3 class="Resultado"><strong>Resultado:</strong></h3>
+            <div class="division">
+              <div class="button-container">
+                <div class="checkTan">
+                  <!-- No es visible pero el valor es una bit-flag -->
+                  <p class="TangenteP"><strong>Tangente</strong></p>
+                  <input type="checkbox" class="select-checkbox btn-switch" value="1" id="btn-switch-tangente" checked=checked>
+                  <label for="btn-switch-tangente" class="lbl-switch"></label>
+                </div>
+                <div class="CheckNormal">
+                  <p class="Normalp"><strong>Normal</strong></p>
+                  <input type="checkbox" class="select-checkbox btn-switch" value="2" id="btn-switch-normal" checked=checked>
+                  <label for="btn-switch-normal" class="lbl-switch"></label>
+                </div>
+              </div>
+              <div class="image-container">
+                <div class="loader" display="none"></div>
+                <div class="image-stack">
+                  <img class="image" id="image1" alt="Imagen 1">
+                  <img class="image" id="image2" alt="Imagen 2">
+                  <img class="image" id="image3" alt="Imagen 3">
+                  <img class="image" id="image4" alt="Imagen 4">
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!--Acerca De-->
+      <div id="Acercade" class="page">
+        <h1 class="Acercah1">Desarrolladores</h1>
+        <div class="ContendorPar">
+          <div class="cuadro">
+            <h2>Frairlyn Camilo Roque Suarez</h2>
+            <p><strong>Tel:</strong>829-436-8532</p>
+            <p><strong>Matricula:</strong>2023-0295</p>
+            <p><strong>Correo:</strong>20230295@itla.edu.do</p>
+          </div>
+          <div class="cuadro">
+            <h2>Malvin Israel Jimenez Da Costa Gomez</h2>
+            <p><strong>Tel:</strong>829-624-2257</p>
+            <p><strong>Matricula:</strong>2023-0562</p>
+            <p><strong>Correo:</strong>20230562@itla.edu.do</p>
+          </div>
+          <div class="cuadro">
+            <h2>Ruddy Ismael Benjamin Tiburcio</h2>
+            <p><strong>Tel:</strong>809-914-1244</p>
+            <p><strong>Matricula:</strong>2023-0041</p>
+            <p><strong>Correo:</strong>20230041@itla.edu.do</p>
+          </div>
+        </div>
+      </div>
+      <!--Home-->
+      <div id="Home" class="page">
+        <div class="contenidoland">
+          <div class="landing-header">
+            <h1>Calculadora de Recta Tangente y Normal </h1>
+            <p>¡Optimiza tus estudios de cálculo diferencial con nuestra calculadora de rectas!</p>
+          </div>
+          <section class="landing-cta">
+            <h2>¡Comienza a Calcular Ahora!</h2>
+            <p>Ingresa tu función y punto para calcular la recta tangente.</p>
+            <div class="botonlanding">
+              <a href="#Calculadora" class="btn">Comenzar</a>
+            </div>
+        </div>
+        </section>
+        <footer>
+          <p>&copy; 2023 Calculadora de Rectas | Desarrollada por [Frairlyn, Malvin, Ruddy]</p>
+        </footer>
+      </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+  </body>
+</html>

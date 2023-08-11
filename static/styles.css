@@ -1,0 +1,506 @@
+/* Estilos de sidebar */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    background: linear-gradient(rgb(243, 12, 12), rgb(147, 144, 146));
+    width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    transition: left 0.3s ease; 
+}
+/*Mostar sidebar activado */
+#sidebar.active {
+    left: 0; 
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.nav-scrollable {
+    margin-top: 1rem;
+    overflow-y: auto;
+    flex: 1;
+}
+.nav-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+.nav-item a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.icon {
+    margin-right: 0.5rem; 
+}
+
+.nav-item a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+    background-color: white;
+}
+body {
+    font-family: "Inter", sans-serif;
+  }
+
+i{
+    margin-bottom: 4px;
+}
+
+.page {
+    display: none;
+}
+
+.page:target {
+    display: block;
+}
+
+#sidebar span{
+       position: absolute;
+       left: 290px;
+       top: 20px;
+       cursor: pointer;
+       font-size: 30px;
+       color: black;
+}
+
+/*sidebar ocultado*/
+#sidebar.active {
+    left: 0;
+}
+
+.toggle-btn {
+    cursor: pointer;
+
+}/* Agregar un margen a la izquierda para evitar superposicion */
+#Calculadora {
+    margin-left: 320px; 
+    z-index: 0;
+}
+
+#Acercade{
+    margin-left: 200px;
+    z-index: 0;
+}
+
+#Home{
+    margin-left: 300px; 
+    z-index: 0;
+}
+/*Ajustar sidebar*/
+
+.content {
+    margin-left: 0; 
+    transition: margin-left 0.3s ease; 
+    padding-bottom: 198px;
+}
+#sidebar.active ~ .content {
+    margin-left: 50px; 
+}
+#Operacion{
+    width: 250px;
+    height: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#punto{
+    width: 150px;
+    height: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray; 
+    width:100%;
+    overflow-x: hidden;
+
+}
+
+/*Boton de calcular*/
+.Boton{
+    margin-right: 750px;
+    margin-top: 25px;
+    background-color:rgb(243, 12, 12);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 68%;
+}
+
+.Boton:hover {
+background-color: #f19b9b;
+}
+.Boton:active {
+background-color:#f19b9b;
+}
+.Resultado{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+/* Estilos de alerta */
+.alert {
+    background-color: #ffdb9b;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    border-left: 8px solid #ffa502;
+    animation: show_slide 1s ease forwards;
+    z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.alert.hide{
+    display: none;
+}
+
+.alert .fa-exclamation-circle {
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    transform: translateY(-50%);
+    color: #ce8500;
+    font-size: 30px;
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #ce8500;
+    font-family: 'Inter', sans-serif;
+}
+
+.alert .close-btn {
+    background: #ffd080;
+    padding: 11px 18px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #ffc766;
+}
+
+.close-btn .fa-times {
+    color: #ce8500;
+    font-size: 22px;
+    line-height: 40px;
+}
+/*superposición de imagenes */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-stack {
+    position: relative;
+    width: 447px;
+    height: auto;
+    margin-bottom: 458px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+    display: none;
+    z-index: -1; 
+}
+
+.image.active {
+    margin-left: -85px;
+    display: none;
+    z-index: 1; 
+}
+
+/*Connedor de los check*/
+.button-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    margin-top: 163px;
+    gap: 4px;
+}
+
+/*Check Recta Tangente*/
+#btn-switch-tangente:checked ~ .lbl-switch {
+    background: rgb(243, 12, 12);
+}
+
+.lbl-switch {
+    display: inline-block;
+    width: 74px;
+    height: 30px;
+    background: #aaa;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lbl-switch::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+#btn-switch-tangente:checked ~ .lbl-switch::after {
+    left: 48px;
+}
+
+#btn-switch-tangente {
+    display: none;
+}
+
+/*Check Recta Normal*/
+#btn-switch-normal:checked ~ .lbl-switch {
+    background: rgb(243, 12, 12);
+}
+
+.lbl-switch::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+#btn-switch-normal:checked ~ .lbl-switch::after {
+    left: 48px;
+}
+
+#btn-switch-normal {
+    display: none;
+}
+
+/*Division contenido en caja padre*/
+.division {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    padding-right: 194px;
+}
+
+/*Estilo de Letras en los swicth*/
+p{
+    font-family:'Inter', sans-serif;;
+}
+
+.Normalp{
+    margin-left: 11px;
+}
+
+.TangenteP{
+    margin-left: 3.5px;
+}
+
+/*Mostar home desde que se abra la pagina*/
+.page {
+    display: none; 
+}
+
+#Home {
+    display: block; 
+}
+
+/*Prueba landing*/
+.landing-header {
+text-align: center;
+padding: 100px 0;
+background-color: rgb(243, 12, 12);
+color: white;
+box-shadow: 17px 9px 5px rgba(0, 0, 0, 0.3);
+}
+
+.landing-header h1 {
+font-size: 36px;
+}
+
+.landing-header p {
+font-size: 18px;
+margin-top: 20px;
+}
+
+.landing-cta {
+text-align: center;
+margin-top: 50px;
+}
+
+.landing-cta h2 {
+font-size: 28px;
+}
+
+.botonlanding{
+    margin-top: 29px;
+}
+
+.landing-cta p {
+font-size: 18px;
+margin-top: 20px;
+}
+
+.landing-cta .btn {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: rgb(243, 12, 12);
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+text-decoration: none;
+cursor: pointer;
+}
+
+.landing-cta .btn:hover {
+background-color: #f19b9b;
+}
+
+.contenidoland{
+    margin-right: 219px;
+}
+
+footer p{
+    position: fixed;
+    margin-top: 103px;
+    margin-left: 274px;
+}
+
+
+/*Cuadros para AcercaDe*/
+.cuadros-ContendorPar{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.cuadro {
+    width: 70%;
+    color: white;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    background-color:rgb(243, 12, 12);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.cuadro:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para los títulos de los cuadros */
+.cuadro h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los contenidos de los cuadros */
+.cuadro p {
+    font-size: 16px;
+}
+
+.Acercah1{
+    margin-left: 76px;
+}
+/* Loader css */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
