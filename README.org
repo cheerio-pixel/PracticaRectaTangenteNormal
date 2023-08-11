@@ -12,12 +12,15 @@ Depende de las siguientes librerías:
 - Matplotlib "3.7.2"
 - Sympy "1.12"
 
-- Instalacion Manual
+
+
+
++ Instalacion Manual
 : pip3 install flask numpy matplotlib sympy
 
 
 
-- Instalacion con Poetry
++ Instalacion con Poetry
 
 : poetry install
 
@@ -29,5 +32,6 @@ Depende de las siguientes librerías:
 
 - Usando poetry
 : poetry run flask --app Practica --debug run
+
 Añada la opción ~--host=0.0.0.0~ al final de todo para que sea visible
 en la red local.
