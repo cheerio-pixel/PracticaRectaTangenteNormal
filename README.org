@@ -2,6 +2,12 @@
 
 Este Programa fue diseñado para calcular rectas tangentes y normales.
 
+* Autores
+
+- "Ruddy Ismael Benjamin Tiburcio" <20230041@itla.edu.do>
+- "Frailyn Camilo Roque Suarez" <20230295@itla.edu.do>
+- "Malvin Israel Jimenez Da Costa Gomez" <20230562@itla.edu.do>
+
 * Instalacion
 
 Depende de las siguientes librerías:
