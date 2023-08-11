@@ -1,0 +1,33 @@
+* Calculadora de ruleta
+
+Este Programa fue diseñado para calcular rectas tangentes y normales.
+
+* Instalacion
+
+Depende de las siguientes librerías:
+
+- Python "3.10"
+- Flask "2.3.2"
+- Numpy "1.25.2"
+- Matplotlib "3.7.2"
+- Sympy "1.12"
+
+- Instalacion Manual
+: pip3 install flask numpy matplotlib sympy
+
+
+
+- Instalacion con Poetry
+
+: poetry install
+
+* Ejecucion
+
+
+- En caso de instalarlo manual
+: flask --app Practica --debug run
+
+- Usando poetry
+: poetry run flask --app Practica --debug run
+Añada la opción ~--host=0.0.0.0~ al final de todo para que sea visible
+en la red local.
