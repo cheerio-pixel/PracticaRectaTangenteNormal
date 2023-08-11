@@ -1,4 +1,4 @@
-* Calculadora de ruleta
+* Calculadora de recta tangente y normal
 
 Este Programa fue diseñado para calcular rectas tangentes y normales.
 
