@@ -130,7 +130,7 @@ def report_error(error_code: int):
 
 @app.route("/")
 def main():
-    return send_file("prac.html")
+    return send_file("index.html")
 
 
 # URL /pyplot/&f="PYTHON EXPRESSION"&c=float
